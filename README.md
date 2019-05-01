@@ -15,4 +15,4 @@ This is another web scraper I made. This script scrapes the Project Gutenburg we
 
 - Giovanny's Pizzeria
 
-This is a fun little script i made in order to solidify some of the Python concepts I have been learning. It is a program similating a pizzeria which i appropriately named Giovanny's Pizzeria as the name just seemed so natural. It incorporates the use of lists, dictionaries, logical operators and loops.
+This is a fun little script i made in order to solidify some of the Python concepts I have been learning. It is a program simulating a pizzeria which i appropriately named Giovanny's Pizzeria as the name just seemed so natural. It incorporates the use of lists, dictionaries, logical operators and loops.
