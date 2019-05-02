@@ -1,6 +1,7 @@
 import os
 from time import sleep
 os.system("cls")
+from random import randint
 
 # Menu dictionaries
 ingredientsPrice = {
@@ -17,7 +18,7 @@ pizzas = {
 }
 
 print()
-print("Welcome to Giovanny's Pizzeria")
+print("Welcome to Giovanny's Pizzeria".center(100, ' '))
 print()
 sleep(1)
 
@@ -51,9 +52,9 @@ total = [] # The total cost so far
 request = [] # The requested pizza crust and ingredients.
 toppings = 3 # The amount of toppings ou can add to the pizza. Global Scope
 crust = None
+orderNum = randint(1,100)
 
-
-def CustomCrust():
+def CustomCrust(): # First function
 
     global total
     global request
@@ -80,9 +81,8 @@ def CustomCrust():
         sleep(2)
         CustomCrust()
 
-# SECOND FUNCTION
 
-def CustomIngredients():
+def CustomIngredients(): # Second Function
     global total
     global request
     global crust
@@ -100,8 +100,7 @@ def CustomIngredients():
             total.append(ingredientsPrice[top]) # Appending to total list
         else:
             print("Sorry we dont have that ingredient, please choose one from the menu")
-            print()
-    sleep(1)
+            sleep(1)
 
     # End of While loop
 
@@ -109,10 +108,17 @@ CustomCrust() # Calling the first function
 CustomIngredients() # Calling the second function
 
 total_cost = "${:,.2f}".format(sum(total))
-print(f"Ok so you want {request[1]}, {request[2]}, {request[3]} on a {request[0]} pizza.")
-print(f"The cost for the ingredients is ${str(sum(total[1:3]))} and the cost for the crust is ${str(total[0])} which brings the total cost to {total_cost}.")
+print(f"Ok so you want {request[1]}, {request[2]} and {request[3]} on a {request[0]} pizza.")
 sleep(3)
+print(f"The cost for the ingredients is ${str(sum(total[1:3]))} and the cost for the crust is ${str(total[0])} which brings the total cost to {total_cost}.")
+print(f"Your order number is #00{orderNum}")
+sleep(4)
 print()
+print("Making pizza.. please wait.".center(100, ' '))
+sleep(7)
+print()
+print(f"Order #00{orderNum} is ready! ")
+sleep(2)
 print("Thank you for your business and enjoy your pizza!")
 print()
 input("Press Enter to quit: ")
