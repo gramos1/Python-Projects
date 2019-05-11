@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options # This is to configure Chr
 from getpass import getpass # This is to prevent the password to be echoed to the terminal
 from time import sleep
 import sys  
-sys.tracebacklimit = 0 # Supressing tracebacks, just so the terminal stays nice and clean
+sys.tracebacklimit = None # Supressing tracebacks, just so the terminal stays nice and clean
 
 print()
 print("UPS CampusShip tool".center(100, ' '))
