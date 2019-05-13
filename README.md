@@ -19,4 +19,4 @@ This is a fun little script I made in order to solidify some of the Python conce
 
 - UPS CampuShip Tool
 
-This is a script I made to assit me and some of my co-workers at my workplace. It automates the filling out of fields in the UPS CampusShip website, I made it using the Selenium library and Chrome webdriver. In order to use it you must download the Chrome Webdriver and place inside 'C:/ChromeDriver/'. 
+This is a script I made to assist me and some of my co-workers at my workplace. It automates the filling out of fields in the UPS CampusShip website, I made it using the Selenium library and Chrome webdriver. In order to use it you must install Selenium and download the Chrome Webdriver and place it inside 'C:/ChromeDriver/'. 
