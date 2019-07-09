@@ -3,7 +3,7 @@ from time import sleep
 os.system("cls")
 from random import randint
 
-# Menu dictionaries
+# menu dictionaries
 ingredientsPrice = {
     "Mushrooms": 1.99,
     "Green Peppers": 0.99,
