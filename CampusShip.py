@@ -1,7 +1,7 @@
-from selenium import webdriver # This is the proper way to import webdriver
-from selenium.webdriver.common.keys import Keys # This is so we can simulate key presses
-from selenium.webdriver.chrome.options import Options # This is to configure Chrome options
-from getpass import getpass # This is to prevent the password to be echoed to the terminal
+from selenium import webdriver # This is the proper way to import webdriver.
+from selenium.webdriver.common.keys import Keys # This is so we can simulate key presses.
+from selenium.webdriver.chrome.options import Options # This is to configure Chrome options.
+from getpass import getpass # This is to prevent the password to be echoed to the terminal.
 from time import sleep
 import sys  
 sys.tracebacklimit = None # Supressing tracebacks, just so the terminal stays nice and clean
