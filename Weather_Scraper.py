@@ -1,4 +1,4 @@
-# BeautifulSoup module is needed in order to run this scraper
+# REQUIREMENT: BeautifulSoup module is needed in order to run this scraper.
 
 from bs4 import BeautifulSoup
 import requests
